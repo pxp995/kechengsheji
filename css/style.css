@@ -1,11 +1,12 @@
 body{
 	background-color:#eee;
-	overflow:hidden;
 	font-family:"微软雅黑";}
 .container{
 	width:100%;
 	padding:0;
 	}
+.navbar{
+	margin:0;}
 footer{
 	width:100%;
 	background-color:#f8f8f8;
@@ -33,4 +34,28 @@ footer{
 	line-height:50px;}
 .navbar-nav li a{
 	font-size:18px;
-	font-weight:600;}
+	font-weight:600;
+	}
+/*轮换图片*/	
+.carousel .item{
+	height:350px;
+	background-color:#000;}
+/*个人信息内的头像表单*/
+.btn-1{ 
+	background-color:#FFF; 
+	border:1px solid #CDCDCD;
+	height:26px; 
+	width:52px;}
+.txt{
+	height:26px; 
+	border:1px solid #cdcdcd; 
+	width:99px;}
+.file-1{
+	height:26px; 
+	filter:alpha(opacity:0);
+	opacity: 0;
+	width:260px;
+	position:relative;
+	top:-22px;
+	left:40px;}
+/*----*/

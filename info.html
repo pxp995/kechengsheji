@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人信息</title>
+    <link rel="icon" href="img/tubiao.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">    
+    <style>
+		h4{
+			font-size:14px;
+			display:inline-block;
+			width:84px;
+			vertical-align:text-top;
+			text-align:right;
+			margin-top:5px;
+			}
+    </style>
+  </head>
+  <body>
+     <div class="container">
+	  <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            
+            <a class="navbar-brand" href="index.html"><img src="img/tubiao.png" />&nbsp;&nbsp;志愿者社区</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">首页</a></li>
+              <li><a href="news.html">志愿新闻</a></li>
+              <li><a href="join.html">参加活动</a></li>
+              <li><a href="show.html">活动展示</a></li>
+              <li><a href="team.html">我要入队</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      
+      
+      <form class="form-signin">
+        <h2 class="form-signin-heading">请填写个人信息</h2><br />
+        <h4>真实姓名：</h4><input type="text" id="UserName" placeholder="请输真实姓名" style="width:210px; float:right;" required autofocus><br /><br />
+        <h4>性&nbsp;&nbsp;别：</h4><label class="radio-inline">
+              <input type="radio" name="sex" id="inlineRadio1" value="man"> 男
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="sex" id="inlineRadio2" value="woman"> 女
+            </label><br /><br />
+        <h4>头&nbsp;&nbsp;像：</h4>
+            <input type='text' name='textfield' id='textfield' class='txt' />  
+            <input type='button' class='btn-1' value='浏览...' />
+            <input type="submit" name="submit" class="btn-1" value="上传" />
+            <input type="file" name="fileField" class="file-1" id="fileField" size="30" onchange="document.getElementById('textfield').value=this.value" />
+            
+ 				
+        <h4>身份证号码：</h4><input type="text" id="inputID" style="width:210px; float:right;" placeholder="请输入身份证号码" required><br /><br />
+        <h4>手机号码：</h4><input type="text" id="inputTel" style="width:210px; float:right;" placeholder="请输入手机号码" required><br /><br />
+        <h4>政治面貌：</h4><input type="text" id="inputPol" style="width:210px; float:right;" placeholder="请输入政治面貌" required><br /><br />
+        <h4>籍贯：</h4><input type="text" id="inputCou" style="width:66.5px; float:right; margin-left:5px;" placeholder="县" required><input type="text" id="inputCity" style="width:67px; float:right; margin-left:5px;" placeholder="市" required><input type="text" id="inputPro" style="width:67px; float:right; margin-left:5px;" placeholder="省份" required><br /><br />
+        <h4>出生年月：</h4>
+            <span class='input-group date' id='datetimepicker10' style="display:inline;">
+                <input type='text' id="inputDate" class='txt' placeholder="1990/01" style="width:163px; height:33px; border-right:none; position:relative; left:3px; top:1px;"/>
+                <span class="input-group-addon" style="display:inline;"><span class="glyphicon glyphicon-calendar">
+                      </span>
+                </span>
+            </span>
+       <br /><br />
+        <h4>职业：</h4><input type="text" id="inputJob" style="width:210px; float:right;" placeholder="请输入你的职业" required><br /><br />
+        <h4>居住地：</h4><input type="text" id="inputAdd" style="width:210px; float:right;" placeholder="请输入你的居住地" required><br /><br />
+        <h4 style="position:relative; top:-70px;">自我介绍：</h4>&nbsp;&nbsp;<textarea rows="4" cols="26" placeholder="请进行简单的自我介绍" style="resize:none;"></textarea><br />
+        <h4>服务项目：</h4><input type="text" id="inputItem" style="width:210px; float:right;" placeholder="请输入你所属的志愿团队" required><br /><br /><br />
+        
+        
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</button>
+      </form>
+      	
+
+    </div>
+    
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/moment-with-locales.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker10').datetimepicker({
+                viewMode: 'years',
+               format: 'YYYY/MM'
+            });
+        });
+    </script>
+  </body>
+</html>
